@@ -307,7 +307,7 @@ padding-left: 15px;
   color: #ccc;
 }
 
-.contact-icon{
+.contact-icons{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -415,6 +415,7 @@ padding-left: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 /*Hamburger defaults to hidden on pc*/
@@ -454,6 +455,9 @@ padding-left: 15px;
   }
   .nav-links.active{
     display: flex;
+  }
+  .hamburger{
+    margin-left: auto;
   }
 
   .hamburger{
