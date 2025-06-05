@@ -345,3 +345,67 @@ padding-left: 15px;
 .btn:hover {
   transform: scale(1.05);
 }
+
+/* ========== Responsive CSS ========== */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .hero-grid,
+    .about-grid,
+    .project-grid,
+    .skills-container,
+    .contact-icons {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1,
+    .about-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero-image img,
+    .about-img img {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .skills-category ul {
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .buttons a {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .contact-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
