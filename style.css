@@ -409,3 +409,45 @@ padding-left: 15px;
         gap: 1rem;
     }
 }
+
+/*Base Styles*/
+.hamburger{
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/*ResponsiverNav*/
+@media screen and (max-width: 768px){
+  .navbar .container{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links{
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 10;
+  }
+  .nav-links.active{
+    display: flex;
+  }
+
+  .hamburger{
+    display: block;
+  }
+
+  .nav-links li{
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+}

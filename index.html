@@ -12,7 +12,13 @@
 <header class="navbar">
  <div class="container">
         <div class="logo">AustiN</div>
-        <nav>
+
+        <!--Hamburger menu-->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav id="nav-menu">
             <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -138,6 +144,16 @@
     <footer>
         <p>&copy; 2025 Ayush Soren. All right reserved.</p>
     </footer>
+
+    <script>
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("nav-menu");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.querySelector(".nav-links").classList.toggle("active");
+  });
+</script>
+
     
 </body>
 </html>
