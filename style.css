@@ -410,12 +410,27 @@ padding-left: 15px;
     }
 }
 
-/*Base Styles*/
+/*Flexbox for navbar layout*/
+.navbar .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Hamburger defaults to hidden on pc*/
 .hamburger{
   display: none;
-  font-size: 24px;
-  color: white;
+  gap: 5px;
+  flex-direction: column;
   cursor: pointer;
+}
+
+/*Hamburger bars*/
+.hamburger span{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
 }
 
 /*ResponsiverNav*/
@@ -442,7 +457,7 @@ padding-left: 15px;
   }
 
   .hamburger{
-    display: block;
+    display: flex;
   }
 
   .nav-links li{
