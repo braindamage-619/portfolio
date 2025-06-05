@@ -13,7 +13,7 @@
  <div class="container">
         <div class="logo">AustiN</div>
 
-        <nav>
+        <nav id="nav-menu">
             <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -62,6 +62,7 @@
     <p>A 22-yearold full-stack developer experienced in React, Node.js, and MongoDB. I love building clean UIs and scalable backends.</p>
 </div>
 </div>
+</section>
 
 <section id="project" class="project">
     <div class="container">
@@ -150,10 +151,10 @@
 
     <script>
   const hamburger = document.getElementById("hamburger");
-  const navMenu = document.getElementById("nav-menu");
+  const navMenu = document.querySelector(".nav-links");
 
   hamburger.addEventListener("click", () => {
-    navMenu.querySelector(".nav-links").classList.toggle("active");
+    navLinks.classList.toggle("active");
   });
 </script>
 
