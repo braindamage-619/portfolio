@@ -434,6 +434,28 @@ padding-left: 15px;
   border-radius: 2px;
 }
 
+#resume{
+  color: white;
+  padding: 50px 20px;
+  background-color: #1c1c1c;
+  text-align: center;
+  
+}
+
+#resume .btn{
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px; 20px;
+  background-color: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#resume .btn:hover{
+  background-color: #005fa3;
+}
+
 /*ResponsiverNav*/
 @media screen and (max-width: 768px){
   .navbar .container{
